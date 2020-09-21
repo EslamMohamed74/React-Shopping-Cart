@@ -1,0 +1,248 @@
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic|Montserrat:400,700);
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Droid Serif', serif;
+    user-select: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+.wrap {
+    width: 75%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1% 0;
+    margin-bottom: 5em;
+}
+
+
+.heading {
+    padding: 1em 0;
+}
+
+.heading h1 {
+    font-family: 'Droid Serif', serif;
+    font-size: 2em;
+    float: left;
+}
+
+.cart {
+    padding: 1em 0;
+}
+
+.cartWrap {
+    padding: 0px;
+}
+
+.cart .items {
+    display: block;
+    width: 100%;
+    padding: 1.5em;
+}
+
+
+.cart .items .infoWrap {
+    display: table;
+    width: 100%;
+}
+
+.cart .items .cartSection {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.cart .items .cartSection .itemNumber {
+    font-size: 0.75em;
+    color: #777;
+    margin-bottom: 0.5em;
+}
+
+.cart .items .cartSection .itemQuantity {
+    margin-top: 0px;
+    margin-left: 30%;
+}
+
+.cart .items .cartSection .itemQuantity i:hover {
+    cursor: pointer;
+}
+
+.cart .items .cartSection h3 {
+    margin-top: 8%;
+    margin-bottom: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+}
+
+.cart .items .cartSection p {
+    display: inline-block;
+    font-size: 0.85em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cart .items .cartSection p .quantity {
+    font-weight: bold;
+}
+
+
+.cart .items .cartSection .itemImg {
+    float: left;
+}
+
+.cart .items .cartSection.qtyWrap,
+.cart .items .cartSection.prodTotal {
+    text-align: center;
+}
+
+.cart .items .cartSection.qtyWrap p,
+.cart .items .cartSection.prodTotal p {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.cart .items .cartSection input.qty {
+    width: 3em;
+    text-align: center;
+    font-size: 1em;
+    padding: 0.25em;
+    margin: 1em 0.5em 0 0;
+}
+
+.cart .items .cartSection .itemImg {
+    width: 220px;
+    display: inline-block;
+    padding-right: 1em;
+}
+
+.cart .items .cartSection.removeWrap i {
+    color: #777;
+}
+
+.cart .items .cartSection.removeWrap i:hover {
+    color: #000000;
+    cursor: pointer;
+}
+
+/* TOTAL AND CHECKOUT */
+.subtotal {
+    float: right;
+    width: 35%;
+}
+
+.subtotal ul {
+    list-style-type: none
+}
+
+.subtotal .totalRow {
+    padding: 0.5em;
+    text-align: right;
+}
+
+.subtotal .totalRow.final {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.subtotal .totalRow span {
+    display: inline-block;
+    text-align: center;
+}
+
+.subtotal .totalRow .label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    color: #777;
+}
+
+.subtotal .totalRow .value {
+    letter-spacing: -0.025em;
+    font-size: 1.25em;
+    width: 35%;
+}
+
+.wrap .backLink {
+    display: inline-block;
+    margin-top: 2.3%;
+    font-weight: bold; 
+    cursor: pointer;
+}
+
+.wrap .backLink span {
+    color: rgb(0, 153, 255);
+}
+
+@media only screen and (max-width: 39.375em) {
+    .wrap {
+        width: 98%;
+        padding: 2% 0;
+    }
+
+    .heading {
+        padding: 1em;
+        font-size: 90%;
+    }
+
+    .cart .items .cartSection {
+        width: 90%;
+        display: block;
+        float: left;
+    }
+
+    .cart .items .cartSection.qtyWrap {
+        width: 10%;
+        text-align: center;
+        padding: 0.5em 0;
+        float: right;
+    }
+
+    .cart .items .cartSection.qtyWrap:before {
+        content: "QTY";
+        display: block;
+        font-family: 'Montserrat', sans-serif;
+        padding: 0.25em;
+        font-size: 0.75em;
+    }
+
+    .cart .items .cartSection .itemQuantity {
+        margin-left: 50%;
+    }
+
+    .cart .items .cartSection.prodTotal,
+    .cart .items .cartSection.removeWrap {
+        display: inline-block;
+        width: 50%;
+    }
+
+    .cart .items .cartSection.removeWrap i {
+        padding: 15% 50%;
+    }
+
+    .cart .items .cartSection .itemImg {
+        width: 35%;
+    }
+
+    .subtotal {
+        width: 100%;
+    }
+}
